@@ -32,8 +32,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Serve static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 # Create output directory
 OUTPUT_DIR = Path("outputs")
