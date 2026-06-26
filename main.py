@@ -222,8 +222,8 @@ def process_single_image(file_bytes: bytes, filename: str) -> dict:
 
 @app.get("/")
 def home():
-    """Serve the web UI"""
-    return FileResponse("static/index.html")
+    """API root"""
+    return {"service": "Faaya Product Preprocessor API", "status": "running", "docs": "/docs"}
 
 
 @app.get("/health")
